@@ -1,0 +1,17 @@
+C:\Users\loras\source\repos\ProgressQATask_v1\obj\Debug\ProgressQATask_v1.csprojAssemblyReference.cache
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\ProgressQATask_v1.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\ProgressQATask_v1.pdb
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\WebDriver.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\WebDriver.Support.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\WebDriver.xml
+C:\Users\loras\source\repos\ProgressQATask_v1\bin\Debug\WebDriver.Support.xml
+C:\Users\loras\source\repos\ProgressQATask_v1\obj\Debug\ProgressQATask_v1.csproj.CopyComplete
+C:\Users\loras\source\repos\ProgressQATask_v1\obj\Debug\ProgressQATask_v1.dll
+C:\Users\loras\source\repos\ProgressQATask_v1\obj\Debug\ProgressQATask_v1.pdb
