@@ -1,4 +1,5 @@
-﻿using ProgressQATask_v1.BaseUtils;
+﻿using OpenQA.Selenium;
+using ProgressQATask_v1.BaseUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,13 @@ namespace ProgressQATask_v1.Pages
     class CustomersPage : Driver
     {
 
-        public static string _url;
-
+        public IWebElement PageTitle
+        {
+            get
+            {
+                return Driver.Browser.FindElement(By.TagName("title")); 
+            }
+        }
 
 
 

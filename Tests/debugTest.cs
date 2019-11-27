@@ -1,26 +1,29 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace ProgressQATask_v1
 {
     [TestClass]
     public class debugTest
     {
-        [TestInitialize]
+        [SetUp]
         public void setUp()
         {
             BaseUtils.Driver.StartBrowser();
         }
 
-        [TestMethod]
+        [Test]
 
         public void CustomersTest() {
             BaseUtils.Driver.GoToPage(BaseUtils.PagesLinks.CustomersPage);
             BaseUtils.CommonFunctions.URLText();
             BaseUtils.CommonFunctions.GetDocumentState();
+            Pages.CustomersPageAsserts.VerifyURLText("customers");
+            Pages.CustomersPageAsserts.DocState("ready");
         }
 
-        [TestCleanup]
+        [TearDown]
 
         public void TestCleanUp() {
             BaseUtils.Driver.StopBrowser();

@@ -52,9 +52,9 @@ namespace ProgressQATask_v1.BaseUtils
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--start-maximized");
-            Browser = new ChromeDriver(@"C:\Users\loras\Downloads\driver\chromedriver_win32 (2)", options);
+            //Browser = new ChromeDriver(@"C:\Users\loras\Downloads\driver\chromedriver_win32 (2)", options);
+            Browser = new ChromeDriver(@"C:\Users\lstoyanova\Downloads\chromedriver_win32 (6)", options);
             BrowserWait = new WebDriverWait(Browser, TimeSpan.FromSeconds(25));
- 
         }
 
         public static void GoToPage (string pageName)
