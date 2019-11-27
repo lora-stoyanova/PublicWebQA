@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgressQATask_v1.BrowserUtils
+namespace ProgressQATask_v1.BaseUtils
 {
-    class PagesNames {
+    class PagesLinks {
         public static string HomePage = "https://www.progress.com";
         public static string CustomersPage = "https://www.progress.com/customers";
         public static string DoctorShterevHospitalPage = "https://www.progress.com/customers/doctor-shterev-hospital";

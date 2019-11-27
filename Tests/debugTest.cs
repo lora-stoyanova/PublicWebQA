@@ -9,19 +9,21 @@ namespace ProgressQATask_v1
         [TestInitialize]
         public void setUp()
         {
-            BrowserUtils.Driver.StartBrowser();
+            BaseUtils.Driver.StartBrowser();
         }
 
         [TestMethod]
 
         public void CustomersTest() {
-            BrowserUtils.Driver.GoToPage(BrowserUtils.PagesNames.CustomersPage);
+            BaseUtils.Driver.GoToPage(BaseUtils.PagesLinks.CustomersPage);
+            BaseUtils.CommonFunctions.URLText();
+            BaseUtils.CommonFunctions.GetDocumentState();
         }
 
         [TestCleanup]
 
         public void TestCleanUp() {
-            BrowserUtils.Driver.StopBrowser();
+            BaseUtils.Driver.StopBrowser();
         }
     }
 }

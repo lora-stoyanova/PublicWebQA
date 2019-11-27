@@ -56,10 +56,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BrowserUtils\Common.cs" />
-    <Compile Include="BrowserUtils\Driver.cs" />
-    <Compile Include="BrowserUtils\PagesNames.cs" />
-    <Compile Include="Common\BasicPageData.cs" />
+    <Compile Include="BaseUtils\CommonFunctions.cs" />
+    <Compile Include="BaseUtils\Driver.cs" />
+    <Compile Include="BaseUtils\PagesLinks.cs" />
+    <Compile Include="Pages\CustomersPage.cs" />
     <Compile Include="Tests\debugTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

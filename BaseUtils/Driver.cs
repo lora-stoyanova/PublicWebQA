@@ -8,14 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgressQATask_v1.BrowserUtils
+namespace ProgressQATask_v1.BaseUtils
 {
     class Driver
     {
         private static WebDriverWait _browserWait;
         private static IWebDriver _browser;
 
-        public static IWebDriver Browser
+
+        public static IWebDriver Browser 
         {
             get
             {
@@ -25,7 +26,7 @@ namespace ProgressQATask_v1.BrowserUtils
                 }
                 return _browser;
             }
-            private set
+            set
             {
                 _browser = value;
             }
