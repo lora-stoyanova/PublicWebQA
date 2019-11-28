@@ -16,21 +16,19 @@ namespace ProgressQATask_v1
         }
 
         [Test]
-
         public void CustomersPageTest() {
             CustomersPage.NavigateTo();
             Common.AssertDocumentStateComplete();
             CustomersPageAsserts.VerifyURLTextContainsSrt("customers");
             CustomersPageAsserts.AssertPageHeaderIsDisplayed("Customers");
-            CustomersPageAsserts.AssertPageFooterIsDisplayed("Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates."); 
-
-
+            CustomersPageAsserts.AssertPageFooterIsDisplayed("Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates.\r\nAll Rights Reserved."); 
         }
 
-       // [TearDown]
-
-        //public void TestCleanUp() {
-        //    BasePage.StopBrowser();
-       // }
+        
+        [TearDown]
+        public void TestCleanUp()
+        {
+            BasePage.StopBrowser();
+        }
     }
 }
