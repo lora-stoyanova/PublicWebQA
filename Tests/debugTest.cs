@@ -1,6 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework;
+using ProgressQATask_v1.BaseUtils;
+using ProgressQATask_v1.Pages;
 
 namespace ProgressQATask_v1
 {
@@ -10,23 +12,25 @@ namespace ProgressQATask_v1
         [SetUp]
         public void setUp()
         {
-            BaseUtils.Driver.StartBrowser();
+            BasePage.StartBrowser();
         }
 
         [Test]
 
-        public void CustomersTest() {
-            BaseUtils.Driver.GoToPage(BaseUtils.PagesLinks.CustomersPage);
-            BaseUtils.CommonFunctions.URLText();
-            BaseUtils.CommonFunctions.GetDocumentState();
-            Pages.CustomersPageAsserts.VerifyURLText("customers");
-            Pages.CustomersPageAsserts.DocState("ready");
+        public void CustomersPageTest() {
+            CustomersPage.NavigateTo();
+            Common.AssertDocumentStateComplete();
+            CustomersPageAsserts.VerifyURLTextContainsSrt("customers");
+            CustomersPageAsserts.AssertPageHeaderIsDisplayed("Customers");
+            CustomersPageAsserts.AssertPageFooterIsDisplayed("Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates."); 
+
+
         }
 
-        [TearDown]
+       // [TearDown]
 
-        public void TestCleanUp() {
-            BaseUtils.Driver.StopBrowser();
-        }
+        //public void TestCleanUp() {
+        //    BasePage.StopBrowser();
+       // }
     }
 }

@@ -8,18 +8,20 @@ using System.Threading.Tasks;
 
 namespace ProgressQATask_v1.Pages
 {
-    class CustomersPage : Driver
+    class CustomersPage : BasePage
     {
+        public static void NavigateTo()
+        {
+            string page = "customers"; 
+            BasePage.GoToPage(BasePage.URL + page);
+        }
 
-        public IWebElement PageTitle
+        public static IWebElement PageTitle
         {
             get
             {
-                return Driver.Browser.FindElement(By.TagName("title")); 
+                return BasePage.Driver.FindElement(By.TagName("title")); 
             }
         }
-
-
-
     }
 }
