@@ -37,5 +37,39 @@ namespace ProgressQATask_v1.BaseUtils
             string txt = Common.GetDocumentState();
             Assert.IsTrue(txt.Contains("complete"));
         }
+
+        public static void VerifyURLTextContainsSrt(string text)
+        {
+            string txt = Common.URLText();
+            Assert.IsTrue(txt.Contains(text));
+        }
+
+        public static IWebElement Header
+        {
+            get
+            {
+                return BasePage.Driver.FindElement(By.ClassName("PRGS-Nav-title"));
+            }
+        }
+
+        public static IWebElement Footer
+        {
+            get
+            {
+                return BasePage.Driver.FindElement(By.ClassName("PRGS-Footer-copyright"));
+            }
+        }
+
+        internal static void AssertPageHeaderTextIsDisplayed(string expectedHeaderText)
+        {
+            string actualHaderText = Common.Header.Text;
+            Assert.AreEqual(expectedHeaderText, actualHaderText, "Header of Customers page is not displayed properly. Expected: " + expectedHeaderText + "Actual: " + actualHaderText);
+        }
+
+        internal static void AssertPageFooterIsDisplayed(string expectedFooterText)
+        {
+            string actualFooterText = Common.Footer.Text.Trim();
+            Assert.AreEqual(expectedFooterText, actualFooterText, "Footer of Customers page is not displayed properly. \n Expected: " + expectedFooterText + " \n Actual: " + actualFooterText);
+        }
     }
 }

@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProgressQATask_v1.BaseUtils
+namespace ProgressQATask_v1
 {
     class BasePage
     {
@@ -54,8 +54,7 @@ namespace ProgressQATask_v1.BaseUtils
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--start-maximized");
-            //Driver = new ChromeDriver(@"C:\Users\loras\Downloads\driver\chromedriver_win32 (2)", options);
-            Driver = new ChromeDriver(@"C:\Users\lstoyanova\Downloads\chromedriver_win32 (6)", options);
+            Driver = new ChromeDriver(@"C:\Users\loras\Downloads\driver\chromedriver_win32 (2)", options);
             DriverWait = new WebDriverWait(Driver, TimeSpan.FromSeconds(25));
         }
 

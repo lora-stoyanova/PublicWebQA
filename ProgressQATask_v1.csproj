@@ -65,11 +65,27 @@
     <Compile Include="BaseUtils\Common.cs" />
     <Compile Include="BasePage.cs" />
     <Compile Include="BaseUtils\PagesLinks.cs" />
+    <Compile Include="Filtration\FiltrationBase.cs" />
+    <Compile Include="Filtration\FiltrationAsserts.cs" />
+    <Compile Include="Filtration\FiltrationMap.cs" />
+    <Compile Include="Navigation\NavigationAsserts.cs" />
+    <Compile Include="Navigation\NavigationBase.cs" />
+    <Compile Include="Navigation\NavigationMap.cs" />
     <Compile Include="Pages\CustomerPageMap.cs" />
     <Compile Include="Pages\CustomersPage.cs" />
     <Compile Include="Pages\CustomersPageAsserts.cs" />
-    <Compile Include="Tests\debugTest.cs" />
+    <Compile Include="Pages\SuccessStoryPage.cs" />
+    <Compile Include="Pages\SuccessStoryPageAsserts.cs" />
+    <Compile Include="Pages\SuccessStoryPageMap.cs" />
+    <Compile Include="SliderDot\SliderDotBase.cs" />
+    <Compile Include="SliderDot\SliderDotAsserts.cs" />
+    <Compile Include="SliderDot\SliderDotMap.cs" />
+    <Compile Include="Tests\CustomersPageTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\FiltrationTests.cs" />
+    <Compile Include="Tests\NavigationTest.cs" />
+    <Compile Include="Tests\SliderDotTest.cs" />
+    <Compile Include="Tests\SuccessStoryPageTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
