@@ -7,7 +7,7 @@ using ProgressQATask_v1.Pages;
 namespace ProgressQATask_v1
 {
     [TestClass]
-    public class debugTest
+    public class CustomersPageTest
     {
         [SetUp]
         public void setUp()
@@ -16,15 +16,15 @@ namespace ProgressQATask_v1
         }
 
         [Test]
-        public void CustomersPageTest() {
+        [Property("Customers Page Tests", 1)]
+        public void CustomersPageTestScenario() {
             CustomersPage.NavigateTo();
             Common.AssertDocumentStateComplete();
-            CustomersPageAsserts.VerifyURLTextContainsSrt("customers");
-            CustomersPageAsserts.AssertPageHeaderIsDisplayed("Customers");
-            CustomersPageAsserts.AssertPageFooterIsDisplayed("Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates.\r\nAll Rights Reserved."); 
+            Common.VerifyURLTextContainsSrt("customers");
+            Common .AssertPageHeaderTextIsDisplayed("Customers");
+            Common.AssertPageFooterIsDisplayed("Copyright © 2019 Progress Software Corporation and/or its subsidiaries or affiliates.\r\nAll Rights Reserved."); 
         }
 
-        
         [TearDown]
         public void TestCleanUp()
         {
